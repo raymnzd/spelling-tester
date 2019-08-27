@@ -10,4 +10,11 @@ class TTS:
         self.engine.say("hello")
         self.engine.runAndWait()
 
+    def inc_rate(self):
+        rate = engine.getProperty('rate')
+        self.engine.setProperty('rate', rate+50)
+
+    def dec_rate(self):
+        rate = engine.getProperty('rate')
+        self.engine.setProperty('rate', rate-50)
 
