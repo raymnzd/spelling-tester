@@ -1,12 +1,12 @@
 import pyttsx3
 import texttospeech 
-from random import shuffle
-
+from PyQt5.QtWidgets import QApplication, QLabel
 
 def main():
-    tts = texttospeech.TTS() 
-    tts.say_word()
-
+    app = QApplication([])
+    label = QLabel("Spell the word")
+    label.show()
+    app.exec_()
 
 if __name__ == "__main__":
     main()
